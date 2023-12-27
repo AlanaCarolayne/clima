@@ -1,0 +1,110 @@
+.clima {
+    margin: 0 3rem;
+}
+
+.temp-cidade {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem 1rem 0 0;
+    margin: 0 25rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.data-clima {
+    margin-left: auto;
+ 
+}
+.espacinho{
+    margin-left: .5rem;
+}
+
+.clima-div {
+    display: flex;
+    margin: 0 25rem;
+    padding: 1rem 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    background: var(--transparente);
+    border: 1px solid var(--transparente-borda);
+    border-radius: 0 0 1rem 1rem;
+    display: grid;
+    gap: 50px 100px;
+
+}
+
+.clima-div-img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 4rem;
+}
+
+.clima-div-info {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    margin-right: 2rem;
+}
+
+.img-clima {
+    min-width: 4.5rem;
+    height: auto;
+    margin-bottom: 15px;
+ 
+}
+
+.temp-clima {
+    font-size: 2rem;
+    font-family: var(--font-destaque);
+    margin: 2rem 0;
+}
+
+.clima-cidade {
+    font-size: 1.3rem;
+    font-family: var(--font-destaque);
+}
+
+.temp-max,
+.temp-min {
+    margin: 10px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .clima-div{
+        width: 50%; 
+        height: auto;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: auto;
+    }
+    .espacinho{
+        margin-left: .1rem ;
+    }
+    .clima-div-img, .clima-div-info{
+        flex-wrap: wrap;
+        grid-auto-columns: auto;
+        grid-auto-rows: auto;
+        grid-column-start:1;
+        grid-column-end: 3;
+        margin: 0;
+        padding: 0;
+    }
+    .temp-clima{
+        margin: 0;
+        
+    }
+    .temp-cidade{
+        width: 48.7%;
+        height: auto;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: auto;
+    }
+} 

@@ -1,0 +1,21 @@
+:root{
+    --font-destaque: 'Comfortaa', sans-serif;
+    --font-principal: 'Raleway', sans-serif;
+    --gradient: linear-gradient(180deg, rgba(63,187,251,1) 0%, rgba(88,125,253,1) 51%, rgba(112,65,255,1) 100%);
+    --font-color: #181717;
+    --transparente:rgba(233, 255, 255, 0.11);
+    --transparente-borda:rgba(117, 117, 117, 0.247);
+}
+
+*{
+    font-family: var(--font-principal);
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--gradient);
+    background-repeat: no-repeat;
+    background-position:initial;
+    background-attachment: fixed;
+    font-size: 1.2rem;
+}
